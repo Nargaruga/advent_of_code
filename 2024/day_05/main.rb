@@ -55,7 +55,7 @@ def correct_order?(update, rules)
       return false
     end
 
-    forbidden = forbidden.union(rules[page_n])
+    forbidden.merge(rules[page_n])
   end
 
   true
